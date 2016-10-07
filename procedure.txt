@@ -1,0 +1,55 @@
+Requirements
+================
+Node v4.x needs to be installed prior to setting up the following
+
+Execution
+================
+1) Use the create-react-app package and install globally if not already installed
+* npm install -g create-react-app
+
+2) Create the boilerplate client app
+* create-react-app cheque-client
+
+3) Lets eject from the tool now to get a better idea of whats included.
+* npm run eject
+
+4) Install testing libraries locally
+* npm install mocha chai --save-dev
+
+5)
+
+npm install --save jquery
+
+
+mocha we can run tests, chai is for verificaton
+
+================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd cheque-client
+  npm start
