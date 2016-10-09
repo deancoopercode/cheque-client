@@ -361,7 +361,7 @@ Inside `index.html`, you can use it like this:
 
 Only files inside the `public` folder will be accessible by `%PUBLIC_URL%` prefix. If you need to use a file from `src` or `node_modules`, you’ll have to copy it there to explicitly specify your intention to make this file a part of the build.
 
-When you run `npm run build`, Create React App will substitute `%PUBLIC_URL%` with a correct absolute path so your project works even if you use client-side routing or host it at a non-root URL. 
+When you run `npm run build`, Create React App will substitute `%PUBLIC_URL%` with a correct absolute path so your project works even if you use client-side routing or host it at a non-root URL.
 
 In JavaScript code, you can use `process.env.PUBLIC_URL` for similar purposes:
 
@@ -916,26 +916,3 @@ See the [Modulus blog post](http://blog.modulus.io/deploying-react-apps-on-modul
 See [this example](https://github.com/xkawi/create-react-app-now) for a zero-configuration single-command deployment with [now](https://zeit.co/now).
 
 ### Surge
-
-Install the Surge CLI if you haven't already by running `npm install -g surge`. Run the `surge` command and log in you or create a new account. You just need to specify the *build* folder and your custom domain, and you are done.
-
-```sh
-              email: email@domain.com
-           password: ********
-       project path: /path/to/project/build
-               size: 7 files, 1.8 MB
-             domain: create-react-app.surge.sh
-             upload: [====================] 100%, eta: 0.0s
-   propagate on CDN: [====================] 100%
-               plan: Free
-              users: email@domain.com
-         IP Address: X.X.X.X
-
-    Success! Project is published and running at create-react-app.surge.sh
-```
-
-Note that in order to support routers that use html5 `pushState` API, you may want to rename the `index.html` in your build folder to `200.html` before deploying to Surge. This [ensures that every URL falls back to that file](https://surge.sh/help/adding-a-200-page-for-client-side-routing).
-
-## Something Missing?
-
-If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)

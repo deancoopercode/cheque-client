@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
-var UserControl = require('./components/final.js');
+import UserControl from './components/usercontrol.jsx';
 
 class App extends Component {
   render() {
