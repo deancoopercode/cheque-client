@@ -1,3 +1,10 @@
+Reasons and Comments
+====================
+
+fetch() isnt supported in IE so for now ive used the JQuery implementation of AJAX
+
+
+
 Requirements
 ================
 Node v4.x needs to be installed prior to install node packages.
